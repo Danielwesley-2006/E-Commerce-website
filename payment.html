@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Method - Amazon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/pages/payment/payment.css">
+  </head>
+  <body>
+    <div class="payment-page">
+      <div class="header">
+        <div class="left-section">
+          <a href="amazon.html" class="header-link">
+            <img class="amazon-logo" src="images/amazon-logo.png">
+            <img class="amazon-mobile-logo" src="images/amazon-mobile-logo.png">
+          </a>
+        </div>
+
+        <div class="right-section">
+          Checkout (<a class="return-to-cart" href="checkout.html">Edit Cart</a>)
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="payment-methods">
+          <div class="page-title">Select a payment method</div>
+
+          <div class="payment-section">
+            <div class="section-title">Your available balance</div>
+            <div class="gift-card">
+              <input type="text" class="gift-card-input" placeholder="Enter Code">
+              <button class="apply-gift-card-button">Apply</button>
+            </div>
+          </div>
+
+          <div class="payment-section">
+            <div class="section-title">Another payment method</div>
+            
+            <div class="payment-option">
+              <input type="radio" name="payment" id="credit-card">
+              <label for="credit-card">
+                Credit or debit card
+                <div class="card-icons">
+                  <img src="images/visa.png" alt="Visa">
+                  <img src="images/mastercard.png" alt="Mastercard">
+                  <img src="images/amex.png" alt="American Express">
+                </div>
+              </label>
+            </div>
+
+            <!-- <div class="payment-option">
+              <input type="radio" name="payment" id="net-banking">
+              <label for="net-banking">
+                Net Banking
+                <select class="bank-select">
+                  <option>Choose an Option</option>
+                </select>
+              </label>
+            </div> -->
+
+            <!-- <div class="payment-option">
+              <input type="radio" name="payment" id="upi">
+              <label for="upi">Other UPI Apps</label>
+            </div> -->
+
+            <div class="payment-option">
+              <input type="radio" name="payment" id="cod">
+              <label for="cod">
+                Cash on Delivery/Pay on Delivery
+                <div class="cod-note">Cash, UPI and Cards accepted.</div>
+              </label>
+            </div>
+          </div>
+
+          <button class="use-payment-button">Use this payment method</button>
+        </div>
+
+        <div class="order-summary">
+          <div class="order-title">Order Summary</div>
+          <div class="summary-row">
+            <div>Items:</div>
+            <div class="js-payment-items"></div>
+          </div>
+          <div class="summary-row">
+            <div>Delivery:</div>
+            <div class="js-payment-delivery"></div>
+          </div>
+          <div class="summary-row total">
+            <div>Order Total:</div>
+            <div class="js-payment-total"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/payment.js"></script>
+  </body>
+</html>

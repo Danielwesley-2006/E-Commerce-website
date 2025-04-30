@@ -1,0 +1,208 @@
+.payment-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.amazon-logo {
+  width: 100px;
+}
+
+.amazon-mobile-logo {
+  display: none;
+  width: 30px;
+}
+
+.right-section {
+  font-size: 14px;
+}
+
+.return-to-cart {
+  color: rgb(0, 113, 133);
+  text-decoration: none;
+}
+
+.return-to-cart:hover {
+  text-decoration: underline;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 30px;
+  align-items: start;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.payment-methods {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.payment-section {
+  margin-bottom: 25px;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.gift-card {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.gift-card-input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #888;
+  border-radius: 3px;
+  font-size: 13px;
+  height: 31px;
+}
+
+.apply-gift-card-button {
+  background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+  border: 1px solid #adb1b8;
+  border-radius: 3px;
+  padding: 7px 12px;
+  cursor: pointer;
+  height: 31px;
+  font-size: 13px;
+}
+
+.apply-gift-card-button:hover {
+  background: linear-gradient(to bottom, #e7e9ec, #e2e4e7);
+}
+
+.payment-option {
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.payment-option input[type="radio"] {
+  margin-top: 3px;
+}
+
+.payment-option label {
+  font-size: 14px;
+  color: #333;
+}
+
+.card-icons {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.card-icons img {
+  height: 25px;
+}
+
+.bank-select {
+  display: block;
+  margin-top: 8px;
+  padding: 5px;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.cod-note {
+  margin-top: 5px;
+  color: #666;
+  font-size: 12px;
+}
+
+.use-payment-button {
+  width: 100%;
+  background: #FFD814;
+  border: 1px solid #FCD200;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(213,217,217,.5);
+}
+
+.use-payment-button:hover {
+  background: #F7CA00;
+}
+
+.order-summary {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  position: sticky;
+  top: 20px;
+  border: 1px solid #ddd;
+}
+
+.order-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.total {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  
+  .amazon-logo {
+    display: none;
+  }
+  
+  .amazon-mobile-logo {
+    display: block;
+  }
+  
+  .order-summary {
+    position: static;
+  }
+}
